@@ -1,0 +1,78 @@
+.welcome {
+  border-bottom: 1px solid #7d7d7d;
+  text-align: center;
+  margin: 15px 0;
+}
+
+.welcome-text {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.7rem;
+  letter-spacing: -0.5px;
+}
+
+.card-deck {
+  margin: 0 10px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+}
+
+.card {
+  border: none;
+  border-radius: initial;
+  margin: 0 10px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 2;
+  -webkit-flex: 1 0 0%;
+  -ms-flex: 1 0 0%;
+  flex: 1 0 50%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.card-block {
+  padding: 1.25rem 0;
+}
+
+.card-title {
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 0.1rem;
+}
+
+.card-title, .card-text {
+  font-size: 0.8rem;
+}
+
+.card-deck .card:not(:first-child) {
+  margin-left: 8px;
+}
+
+.card-deck .card:not(:last-child) {
+  margin-right: 8px;
+}
+
+img.card-img-top {
+  width: 100%;
+}
+
+img.card-img-top:hover {
+  opacity: 0.7;
+}
+
+@media (min-width: 400px) {
+  .card {
+    flex: 1 0 30%;
+  }
+}
