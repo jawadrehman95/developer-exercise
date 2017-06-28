@@ -1,9 +1,5 @@
-$.getJSON("data/recommendations.json", function(json) {
-  // console.log("JSON", json);
+$.getJSON("https://raw.githubusercontent.com/jawadrehman95/developer-exercise/master/data/recommendations.json", function(json) {
   // console.log("Placements", json.placements);
-  // console.log("First object", json.placements[0]);
-  // console.log("Object attributes", json.placements[0].message);
-  // console.log("Smock Dress", json.placements[0].items[1].name);
   // Offload items array to variable
   var productList = json.placements[0].items;
   $("#welcomeMessage").append(json.placements[0].message);

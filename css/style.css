@@ -51,6 +51,10 @@
   margin-bottom: 0.1rem;
 }
 
+.card-title:hover, .card-text:hover {
+  cursor:pointer;
+}
+
 .card-title, .card-text {
   font-size: 0.8rem;
 }
@@ -69,6 +73,7 @@ img.card-img-top {
 
 img.card-img-top:hover {
   opacity: 0.7;
+  cursor:pointer;
 }
 
 @media (min-width: 400px) {
